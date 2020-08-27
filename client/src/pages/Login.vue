@@ -14,24 +14,13 @@
                 <div class="row q-ma-md">
                     <q-input
                         outlined
-                        ref="email"
-                        :rules="[ val => isValidEmailAddress(val) || 'Please enter a valid email address.' ]"
+                        ref="group"
                         lazy-rules
                         v-model="formData.email"
                         class="col"
                         label="Email"
                         stack-label
                     />
-                    <!-- <div class="q-pa-md" style="max-width: 300px">
-                    <div class="q-gutter-md">
-                        <q-select
-                            outlined
-                            v-model="model"
-                            :options="['Springdale', 'East Macon']"
-                            label="Group"
-                        ></q-select>
-                    </div>
-                    </div>-->
                 </div>
                 <div class="row q-ma-md">
                     <q-input
@@ -39,7 +28,7 @@
                         ref="password"
                         v-model="formData.password"
                         class="col"
-                        :rules="[ val => val.length >= 6 || 'Please use minimum 6 .' ]"
+                        :rules="[ val => val.length >= 6 || 'Please use minimum 6 characters.' ]"
                         lazy-rules
                         label="Password"
                         type="password"
@@ -56,7 +45,8 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
+import { mapActions, mapGetters } from "vuex";
+
 export default {
     data() {
         return {
@@ -69,17 +59,21 @@ export default {
     methods: {
         ...mapActions("auth", ["loginUser"]),
         submitForm() {
-            this.$refs.email.validate();
+            let email1 =
+                this.$refs.group.value.replace(/\s/g, "").toLowerCase() +
+                "@gmail.com";
             this.$refs.password.validate();
-            if (!this.$refs.email.hasError && !this.$refs.password.hasError) {
-                this.loginUser(this.formData);
+
+            if (!this.$refs.password.hasError) {
+                let payload = {
+                    email: email1,
+                    password: this.$refs.password.value,
+                };
+                this.loginUser(payload);
             }
         },
-        isValidEmailAddress(email) {
-            const re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-            return re.test(String(email.toLowerCase()));
-        },
     },
+    computed: {},
 };
 </script>
 

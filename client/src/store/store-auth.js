@@ -8,7 +8,6 @@ const state = {
 const mutations = {
    setLoggedIn(state, value) {
       state.loggedIn = value;
-      console.log(value);
    }
 };
 const actions = {

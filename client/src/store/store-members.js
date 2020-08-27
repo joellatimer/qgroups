@@ -35,13 +35,11 @@ const actions = {
          id: memberId,
          member: member
       };
-      console.log(payload);
       dispatch("fbAddMember", payload);
    },
    fbReadData({ commit }) {
       console.log("start reading from Firebase Members");
       let userId = firebaseAuth.currentUser.uid;
-      console.log(firebaseAuth.currentUser.email);
 
       let myRef = firebaseDb.ref("members/" + userId);
       myRef.on("child_added", snapshot => {
@@ -61,7 +59,6 @@ const actions = {
             id: snapshot.key,
             updates: myMember
          };
-         console.log(myMember);
          commit("updateMember", payload);
       });
       myRef.on("child_removed", snapshot => {
@@ -70,7 +67,6 @@ const actions = {
       });
    },
    fbAddMember({}, payload) {
-      console.log("fbAddPayload:", payload);
       let userId = firebaseAuth.currentUser.uid;
       let myRef = firebaseDb.ref("members/" + userId + "/" + payload.id);
       myRef.set(payload.member);

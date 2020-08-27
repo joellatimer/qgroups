@@ -14,11 +14,6 @@
                 <modal-member-email :email.sync="memberToSubmit.email" />
 
                 <modal-member-phone :phone.sync="memberToSubmit.phone" />
-
-                <modal-member-join-date
-                    :joinDate.sync="memberToSubmit.joinDate"
-                    @clear="clearJoinDate"
-                />
             </q-card-section>
 
             <modal-button></modal-button>
@@ -51,9 +46,6 @@ export default {
             });
             this.$emit("close");
         },
-        clearJoinDate() {
-            this.memberToSubmit.joinDate = "";
-        },
     },
     components: {
         "modal-header": require("components/Members/Modals/Shared/ModalHeader.vue")
@@ -66,8 +58,7 @@ export default {
             .default,
         "modal-member-phone": require("components/Members/Modals/Shared/ModalMemberPhone.vue")
             .default,
-        "modal-member-join-date": require("components/Members/Modals/Shared/ModalMemberJoinDate.vue")
-            .default,
+
         "modal-button": require("components/Members/Modals/Shared/ModalButton.vue")
             .default,
     },
