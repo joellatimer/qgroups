@@ -9,7 +9,9 @@
                     ref="modalMemberFirstName"
                 />
 
-                <modal-member-last-name :lastName.sync="memberToSubmit.lastName" />
+                <modal-member-last-name
+                    :lastName.sync="memberToSubmit.lastName"
+                />
 
                 <modal-member-email :email.sync="memberToSubmit.email" />
 

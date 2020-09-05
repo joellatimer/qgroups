@@ -2,7 +2,9 @@
     <q-layout>
         <q-header class="bg-primary" elevated>
             <q-toolbar>
-                <q-toolbar-title class="absolute-center">Missional Communities</q-toolbar-title>
+                <q-toolbar-title class="absolute-center"
+                    >Missional Communities</q-toolbar-title
+                >
             </q-toolbar>
         </q-header>
         <q-footer>
@@ -17,11 +19,11 @@
             </q-tabs>
         </q-footer>
         <!-- <q-drawer
-          v-model="leftDrawerOpen"
-          :breakpoint="767"
-          :width="200"
+          v-model='leftDrawerOpen'
+          :breakpoint='767'
+          :width='200'
           bordered
-          content-class="bg-primary"
+          content-class='bg-primary'
             <q-list dark>
                 <q-item-label
                 header
@@ -29,14 +31,14 @@
                 Navigation
                 </q-item-label>
                 <q-item
-                  v-for="(nav, index) in navs"
-                  :key="index"
-                  :to="nav.to"
-                  class="text-grey-4"
+                  v-for='(nav, index) in navs'
+                  :key='index'
+                  :to='nav.to'
+                  class='text-grey-4'
                   exact
                   clickable>
                     <q-item-section>
-                        <q-icon :name="nav.icon" />
+                        <q-icon :name='nav.icon' />
                     </q-item-section>
                     <q-item-section>
                         <q-item-label>{{ nav.label }}</q-item-label>
@@ -70,9 +72,9 @@ export default {
                 },
 
                 {
-                    label: "Reports",
-                    icon: "reports",
-                    to: "/reports",
+                    label: "Attencance",
+                    icon: "attencance",
+                    to: "/attencance",
                 },
             ],
         };

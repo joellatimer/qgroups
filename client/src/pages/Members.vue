@@ -4,10 +4,9 @@
             <div class="row">
                 <div class="col-2"></div>
                 <div class="col-7">
-                    <q-banner
-                        inline-actions
-                        class="bg-orange-4"
-                    >{{groups.groupName }} Community Members</q-banner>
+                    <q-banner inline-actions class="bg-orange-4"
+                        >{{ groups.groupName }} Community Members</q-banner
+                    >
                     <q-card class="bg-orange-1" flat bordered>
                         <member
                             v-for="(member, key) in members"
@@ -24,7 +23,7 @@
                 <div class="col-2"></div>
                 <div class="col-7">
                     <q-btn
-                        @click="showAddMember=true"
+                        @click="showAddMember = true"
                         class="bg-primary text-white"
                         label="Add a Member"
                     />
@@ -33,7 +32,7 @@
             </div>
 
             <q-dialog v-model="showAddMember">
-                <add-member @close="showAddMember=false" />
+                <add-member @close="showAddMember = false" />
             </q-dialog>
         </q-page>
     </div>

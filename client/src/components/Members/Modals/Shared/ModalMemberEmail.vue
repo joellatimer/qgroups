@@ -6,7 +6,8 @@
                 @input="$emit('update:email', $event)"
                 :value="email"
                 label="Email"
-                class="col">
+                class="col"
+            >
             </q-input>
         </div>
     </q-item-section>
@@ -14,11 +15,8 @@
 
 <script>
 export default {
-      props:['email']
-
-}
+    props: ["email"],
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

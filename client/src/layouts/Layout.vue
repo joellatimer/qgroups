@@ -48,13 +48,13 @@ export default {
                     to: "/members",
                 },
                 {
-                    label: "Attendance",
-                    to: "/attendance",
+                    label: "Meetings",
+                    to: "/meetings",
                 },
-                {
-                    label: "Reports",
-                    to: "/reports",
-                },
+                // {
+                //    label: 'Attencance',
+                //    to: '/attendance'
+                // }
             ],
         };
     },

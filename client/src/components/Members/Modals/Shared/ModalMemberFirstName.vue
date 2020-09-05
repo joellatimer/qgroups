@@ -5,10 +5,11 @@
                 outlined
                 @input="$emit('update:firstName', $event)"
                 :value="firstName"
-                :rules="[val => !!val || 'Field is required']"
+                :rules="[(val) => !!val || 'Field is required']"
                 ref="firstName"
                 label="First Name"
-                class="col">
+                class="col"
+            >
             </q-input>
         </div>
     </q-item-section>
@@ -16,10 +17,8 @@
 
 <script>
 export default {
-      props:['firstName'],
-}
+    props: ["firstName"],
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

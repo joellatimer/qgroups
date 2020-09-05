@@ -10,25 +10,38 @@
                         Login to access the Missional Communities Application
                     </q-banner>
                 </div>
-
-                <div class="row q-ma-md">
-                    <q-input
-                        outlined
-                        ref="group"
-                        lazy-rules
-                        v-model="formData.email"
-                        class="col"
-                        label="Email"
-                        stack-label
-                    />
+                <div>
+                    <div class="q-gutter-md q-ma-md" style="max-width: 400px">
+                        <!-- <q-select
+                            outlined
+                            label='Group'
+                            value
+                            ref='group'
+                            :v-model='model'
+                            :options='options'
+                        /> -->
+                        <q-input
+                            outlined
+                            ref="email"
+                            lazy-rules
+                            v-model="formData.email"
+                            class="col"
+                            label="Email"
+                            stack-label
+                        />
+                    </div>
                 </div>
-                <div class="row q-ma-md">
+                <div class="row q-ma-md q-gutter-md" style="max-width: 390px">
                     <q-input
                         outlined
                         ref="password"
                         v-model="formData.password"
                         class="col"
-                        :rules="[ val => val.length >= 6 || 'Please use minimum 6 characters.' ]"
+                        :rules="[
+                            (val) =>
+                                val.length >= 6 ||
+                                'Please use minimum 6 characters.',
+                        ]"
                         lazy-rules
                         label="Password"
                         type="password"
@@ -54,14 +67,18 @@ export default {
                 email: "",
                 password: "",
             },
+            model: null,
+            options: ["Springdale Woods", "East Macon"],
         };
     },
     methods: {
         ...mapActions("auth", ["loginUser"]),
+        ...mapGetters("groups", ["groups"]),
         submitForm() {
             let email1 =
-                this.$refs.group.value.replace(/\s/g, "").toLowerCase() +
+                this.$refs.email.value.replace(/\s/g, "").toLowerCase() +
                 "@gmail.com";
+
             this.$refs.password.validate();
 
             if (!this.$refs.password.hasError) {

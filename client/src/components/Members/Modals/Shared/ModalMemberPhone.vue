@@ -7,7 +7,8 @@
                 :value="phone"
                 label="Phone"
                 mask="(###) ### ####"
-                class="col">
+                class="col"
+            >
             </q-input>
         </div>
     </q-item-section>
@@ -15,11 +16,8 @@
 
 <script>
 export default {
-      props:['phone']
-
-}
+    props: ["phone"],
+};
 </script>
 
-<style>
-
-</style>
+<style></style>
