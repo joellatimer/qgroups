@@ -1,56 +1,73 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<project version='4'>
-  <component name='ChangeListManager'>
-    <list default='true' id='f561c685-9d7c-489e-b8bc-9363c9c2f693' name='Default Changelist' comment='' />
-    <option name='SHOW_DIALOG' value='false' />
-    <option name='HIGHLIGHT_CONFLICTS' value='true' />
-    <option name='HIGHLIGHT_NON_ACTIVE_CHANGELIST' value='false' />
-    <option name='LAST_RESOLUTION' value='IGNORE' />
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f561c685-9d7c-489e-b8bc-9363c9c2f693" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/client/quasar.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/quasar.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/quasar-logo-full.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/quasar-logo-full.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/boot/firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/boot/firebase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/boot/router-auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/boot/router-auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Groups.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Meetings.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Meetings.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/router/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/router/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/store-meetings.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/store-meetings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/store-members.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/store-members.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name='ProjectId' id='1gKZW6peR0rjP43QVR3oQYwWblk' />
-  <component name='ProjectViewState'>
-    <option name='autoscrollToSource' value='true' />
-    <option name='hideEmptyMiddlePackages' value='true' />
-    <option name='showLibraryContents' value='true' />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name='PropertiesComponent'>
-    <property name='RunOnceActivity.OpenProjectViewOnStart' value='true' />
-    <property name='WebServerToolWindowFactoryState' value='false' />
-    <property name='last_opened_file_path' value='$PROJECT_DIR$' />
-    <property name='nodejs_package_manager_path' value='npm' />
-    <property name='settings.editor.selected.configurable' value='preferences.lookFeel' />
+  <component name="ProjectId" id="1gKZW6peR0rjP43QVR3oQYwWblk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
-  <component name='SpellCheckerSettings' RuntimeDictionaries='0' Folders='0' CustomDictionaries='0' DefaultDictionary='application-level' UseSingleDictionary='true' transferred='true' />
-  <component name='TaskManager'>
-    <task active='true' id='Default' summary='Default task'>
-      <changelist id='f561c685-9d7c-489e-b8bc-9363c9c2f693' name='Default Changelist' comment='' />
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f561c685-9d7c-489e-b8bc-9363c9c2f693" name="Default Changelist" comment="" />
       <created>1597865277884</created>
-      <option name='number' value='Default' />
-      <option name='presentableId' value='Default' />
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1597865277884</updated>
-      <workItem from='1597865280789' duration='2457000' />
+      <workItem from="1597865280789" duration="2457000" />
+      <workItem from="1599586159089" duration="301000" />
     </task>
     <servers />
   </component>
-  <component name='TerminalProjectNonSharedOptionsProvider'>
-    <option name='shellPath' value='C:\Program Files\Git\bin\bash.exe' />
-    <option name='startingDirectory' value='C:\Program Files\Git\bin' />
+  <component name="TerminalProjectNonSharedOptionsProvider">
+    <option name="shellPath" value="C:\Program Files\Git\bin\bash.exe" />
+    <option name="startingDirectory" value="C:\Program Files\Git\bin" />
   </component>
-  <component name='TypeScriptGeneratedFilesManager'>
-    <option name='version' value='3' />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
-  <component name='WindowStateProjectService'>
-    <state x='752' y='378' key='#Scopes' timestamp='1597865328155'>
-      <screen x='0' y='0' width='1920' height='1040' />
+  <component name="WindowStateProjectService">
+    <state x="752" y="378" key="#Scopes" timestamp="1597865328155">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x='752' y='378' key='#Scopes/0.-1080.1920.1040/1920.-5.1920.1080/0.0.1920.1040@0.0.1920.1040' timestamp='1597865328155' />
-    <state x='740' y='261' key='FileChooserDialogImpl' timestamp='1597867290042'>
-      <screen x='0' y='0' width='1920' height='1040' />
+    <state x="752" y="378" key="#Scopes/0.-1080.1920.1040/1920.-5.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1597865328155" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1597867290042">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x='740' y='261' key='FileChooserDialogImpl/0.-1080.1920.1040/1920.-5.1920.1080/0.0.1920.1040@0.0.1920.1040' timestamp='1597867290042' />
-    <state x='688' y='113' key='SettingsEditor' timestamp='1597867688348'>
-      <screen x='0' y='0' width='1920' height='1040' />
+    <state x="740" y="261" key="FileChooserDialogImpl/0.-1080.1920.1040/1920.-5.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1597867290042" />
+    <state x="688" y="113" key="SettingsEditor" timestamp="1597867688348">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x='688' y='113' key='SettingsEditor/0.-1080.1920.1040/1920.-5.1920.1080/0.0.1920.1040@0.0.1920.1040' timestamp='1597867688348' />
+    <state x="688" y="113" key="SettingsEditor/0.-1080.1920.1040/1920.-5.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1597867688348" />
   </component>
 </project>

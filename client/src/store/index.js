@@ -1,11 +1,11 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
-import auth from './store-auth';
-import meetings from './store-meetings';
-import members from './store-members';
-import groups from './store-groups';
+import Vue from 'vue'
+import Vuex from 'vuex'
+import auth from './store-auth'
+import meetings from './store-meetings'
+import members from './store-members'
+import groups from './store-groups'
 
-Vue.use(Vuex);
+Vue.use(Vuex)
 
 export default function (/* { ssrContext } */) {
     const Store = new Vuex.Store({
@@ -17,7 +17,7 @@ export default function (/* { ssrContext } */) {
         },
 
         strict: process.env.DEV
-    });
+    })
 
-    return Store;
+    return Store
 }

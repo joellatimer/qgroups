@@ -12,6 +12,15 @@
                     clickable
                 >
                 </q-table>
+                <div>
+                    <q-card-actions align="left">
+                        <q-btn
+                            label="New Meeting"
+                            color="primary"
+                            type="submit"
+                        />
+                    </q-card-actions>
+                </div>
             </div>
 
             <div class="col-xs-8 col-sm-6 q-pa-md" style="width: 350px">

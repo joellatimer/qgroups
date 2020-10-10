@@ -33,7 +33,7 @@ const actions = {
             if (user) {
                 commit('setLoggedIn', true)
                 LocalStorage.set('loggedIn', true)
-                this.$router.push('/members').catch((err) => { })
+                this.$router.push('/members')
                 dispatch('members/fbReadData', null, { root: true })
                 dispatch('groups/fbReadData', null, { root: true })
                 dispatch('meetings/fbReadData', null, { root: true })
@@ -42,7 +42,7 @@ const actions = {
                 commit('members/setMembersDownloaded', false, { root: true })
                 commit('setLoggedIn', false)
                 LocalStorage.set('loggedIn', false)
-                this.$router.replace('/').catch((err) => { })
+                this.$router.replace('/')
             }
         })
     }

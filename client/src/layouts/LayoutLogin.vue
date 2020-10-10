@@ -5,13 +5,6 @@
                 <q-toolbar-title class="absolute-center">
                     Missional Communities
                 </q-toolbar-title>
-                <!-- <q-btn
-                  v-if='!loggedIn'
-                  to='auth'
-                  flat
-                  icon-right='account_circle'
-                  label='Login'
-                  class='absolute_right' /> -->
                 <q-btn
                     v-if="loggedIn"
                     to="/"
