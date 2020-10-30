@@ -1,75 +1,91 @@
 {
-    "groups": {
-        "kiYyiUrPpJZC9Shw3gSsJHtEynq1": {
-            "groupName": "Springdale Woods"
-        },
-        "yPPnTAwkNhNRQdBvrYv326QXL3F2": {
-            "groupName": "East Macon"
-        }
+    "groups" : {
+      "kiYyiUrPpJZC9Shw3gSsJHtEynq1" : {
+        "groupName" : "Springdale Woods"
+      },
+      "yPPnTAwkNhNRQdBvrYv326QXL3F2" : {
+        "groupName" : "East Macon"
+      }
     },
-    "meetings": {
-        "kiYyiUrPpJZC9Shw3gSsJHtEynq1": {
-            "id1": {
-                "attend": "50%",
-                "attid1": {
-                    "attend": true,
-                    "firstName": "Nate",
-                    "lastName": "Chapman"
+    "meetings" : {
+      "kiYyiUrPpJZC9Shw3gSsJHtEynq1" : {
+        "id1" : {
+          "att%" : 90,
+          "attends":{
+                "attid1" : {
+                    "present" : true,
+                    "firstName" : "Nate",
+                    "lastName" : "Chapman"
                 },
-                "attid2": {
-                    "attend": true,
-                    "firstName": "Dan",
-                    "lastName": "Martin"
-                },
-                "date": "2020/5/23",
-                "type": "missional"
-            },
-            "id2": {
-                "attend": "80%",
-                "date": "\"3/2/2020",
-                "type": "regular"
-            }
+                "attid2" : {
+                    "present" : true,
+                    "firstName" : "Dan",
+                    "lastName" : "Martin"
+                }
+          },
+         
+          "date" : "2020/5/23",
+          "type" : "regular"
         },
-        "yPPnTAwkNhNRQdBvrYv326QXL3F2": {
-            "id1": {
-                "attend": "81%",
-                "date": "3/20/2020",
-                "type": "regular"
-            }
+        "id2": {
+            "att%" : 85,
+            "attends":{
+                  "attid1" : {
+                      "present" : true,
+                      "firstName" : "Joel",
+                      "lastName" : "Latimer"
+                  },
+                  "attid2" : {
+                      "present" : true,
+                      "firstName" : "Terri",
+                      "lastName" : "Latimer"
+                  }
+            },
+           
+            "date" : "2020/3/2",
+            "type" : "missional"
         }
+      },
+      "yPPnTAwkNhNRQdBvrYv326QXL3F2" : {
+        "id1" : {
+          "attend" : "81%",
+          "date" : "3/20/2020",
+          "type" : "regular"
+        }
+      }
     },
-    "members": {
-        "kiYyiUrPpJZC9Shw3gSsJHtEynq1": {
-            "510cf17d-81e1-451c-901f-e8b9fa24f920": {
-                "email": "tim@gmail.com",
-                "firstName": "Tim",
-                "joinDate": "",
-                "lastName": "Bottoms",
-                "phone": "(478) 898 1564"
-            }
-        },
-        "yPPnTAwkNhNRQdBvrYv326QXL3F2": {
-            "00291ab0-63f4-43cd-9cac-08f18b6e6ba2": {
-                "email": "jim@gmail.com",
-                "firstName": "Jim",
-                "joinDate": "",
-                "lastName": "Shaw",
-                "phone": "(478) 568 1546"
-            },
-            "1d567b58-c623-492a-8a9e-b2fc6573fada": {
-                "email": "don@gmail.com",
-                "firstName": "Donald",
-                "joinDate": "",
-                "lastName": "Duck",
-                "phone": "(589) 648 2351"
-            },
-            "7928b72e-b096-4be5-a3ef-e00a6112bb9f": {
-                "email": "joe@test.com",
-                "firstName": "Joe",
-                "joinDate": "",
-                "lastName": "Biden",
-                "phone": "(587) 956 5285"
-            }
+    "members" : {
+      "kiYyiUrPpJZC9Shw3gSsJHtEynq1" : {
+        "510cf17d-81e1-451c-901f-e8b9fa24f920" : {
+          "email" : "tim@gmail.com",
+          "firstName" : "Tim",
+          "joinDate" : "",
+          "lastName" : "Bottoms",
+          "phone" : "(478) 898 1564"
         }
+      },
+      "yPPnTAwkNhNRQdBvrYv326QXL3F2" : {
+        "00291ab0-63f4-43cd-9cac-08f18b6e6ba2" : {
+          "email" : "jim@gmail.com",
+          "firstName" : "Jim",
+          "joinDate" : "",
+          "lastName" : "Shaw",
+          "phone" : "(478) 568 1546"
+        },
+        "1d567b58-c623-492a-8a9e-b2fc6573fada" : {
+          "email" : "don@gmail.com",
+          "firstName" : "Donald",
+          "joinDate" : "",
+          "lastName" : "Duck",
+          "phone" : "(589) 648 2351"
+        },
+        "7928b72e-b096-4be5-a3ef-e00a6112bb9f" : {
+          "email" : "joe@test.com",
+          "firstName" : "Joe",
+          "joinDate" : "",
+          "lastName" : "Biden",
+          "phone" : "(587) 956 5285"
+        }
+      }
     }
-}
+  }

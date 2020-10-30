@@ -1,5 +1,5 @@
 <template>
-    <div class="q-pa-md">
+    <q-page class="q-pa-md">
         <div class="row">
             <div class="col-xs-8 col-sm-6 q-pa-md" style="width: 350px">
                 <q-table
@@ -9,7 +9,7 @@
                     :columns="columns"
                     row-key="date"
                     class="bg-orange-1"
-                    clickable
+                    @row-click="showMeeting"
                 >
                 </q-table>
                 <div>
@@ -27,26 +27,49 @@
                 <q-banner inline-actions class="bg-orange-4">
                     {{ groups.groupName }} Attendance
                 </q-banner>
-                <q-list>
-                    <attend
-                        v-for="(member, key) in members"
-                        :key="key"
-                        :member="member"
-                        :id="key"
-                        class="bg-orange-1"
-                    >
-                    </attend>
+                <q-list 
+                  bordered class="bg-orange-1">
+                    <q-item  v-for="(attend, key) in attends" 
+                        :key="key" 
+                        :attends="attends" 
+                        @click="attends.present = !attends.present"
+                        :id="key">
+                        <q-item-section>
+                            {{ attend.firstName}} {{attend.lastName}}
+                        </q-item-section>
+                        <q-item-section side top>
+		                     <q-checkbox v-model="attends.present" />
+		                </q-item-section>
+                    </q-item>
                 </q-list>
             </div>
         </div>
-    </div>
+    </q-page>
 </template>
 
 <script>
 import { mapGetters } from "vuex";
 export default {
+
     data() {
         return {
+            attends: {
+                firstName: "",
+                lastName: "",
+                present:false,
+                // "attid1" : {    
+                //     "present" : true,
+                //     "firstName" : "Nate",
+                //     "lastName" : "Chapman"
+                // },
+                // "attid2" : {
+                //     "present" : true,
+                //     "firstName" : "Dan",
+                //     "lastName" : "Martin"
+                //     }
+            
+            },
+            
             columns: [
                 {
                     name: "date",
@@ -70,6 +93,7 @@ export default {
                     sortable: true,
                 },
             ],
+
         };
     },
     computed: {
@@ -79,10 +103,15 @@ export default {
         },
         ...mapGetters("groups", ["groups"]),
         ...mapGetters("members", ["members"]),
+    
     },
-    components: {
-        attend: require("components/Attend.vue").default,
-    },
+    methods: {
+        showMeeting(evt, row){
+            console.log(row.attends)
+            this.attends = row.attends
+        }
+    }
+
 };
 </script>
 

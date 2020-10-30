@@ -1,5 +1,5 @@
 import { LocalStorage, Loading } from 'quasar'
-import showErrorMessage from '../Functions/showErrorMessage'
+import { showErrorMessage } from '../Functions/showErrorMessage'
 import { firebaseAuth } from '../boot/firebase'
 
 const state = {
