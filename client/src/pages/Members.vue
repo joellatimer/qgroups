@@ -3,31 +3,31 @@
         <q-page class="q-ma-lg">
             <div class="row">
                 <div class="col-2"></div>
-                <div class="col-7">
-                    <q-banner inline-actions class="bg-orange-4"
-                        >{{ groups.groupName }} Community Members</q-banner
-                    >
-                    <q-card class="bg-orange-1" flat bordered>
-                        <member
-                            v-for="(member, key) in members"
-                            :key="key"
-                            :member="member"
-                            :id="key"
-                        />
-                    </q-card>
-                </div>
+                    <div class="col-7">
+                        <q-banner inline-actions class="bg-orange-4"
+                            >{{ groups.groupName }} Community Members</q-banner
+                        >
+                        <q-card class="bg-orange-1" flat bordered>
+                            <member
+                                v-for="(member, key) in members"
+                                :key="key"
+                                :member="member"
+                                :id="key"
+                            />
+                        </q-card>
+                    </div>
                 <div class="q-pt-xs"></div>
                 <div class="col-2"></div>
             </div>
             <div class="row">
                 <div class="col-2"></div>
-                <div class="col-7">
-                    <q-btn
-                        @click="showAddMember = true"
-                        class="bg-primary text-white"
-                        label="Add a Member"
-                    />
-                </div>
+                    <div class="col-7">
+                        <q-btn
+                            @click="showAddMember = true"
+                            class="bg-primary text-white"
+                            label="Add a Member"
+                        />
+                    </div>
                 <div class="col-2"></div>
             </div>
 

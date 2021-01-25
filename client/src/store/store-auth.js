@@ -10,6 +10,7 @@ const mutations = {
     setLoggedIn(state, value) {
         state.loggedIn = value
     }
+
 }
 const actions = {
     loginUser({ }, payload) {

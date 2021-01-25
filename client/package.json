@@ -12,15 +12,16 @@
         "@quasar/extras": "^1.0.0",
         "core-js": "^3.6.5",
         "firebase": "^7.15.5",
+        "node": "^12.20.0",
         "quasar": "^1.0.0",
-        "vue": "^4.4.6",
         "vuex": "^3.5.1"
     },
     "devDependencies": {
         "@quasar/app": "^2.0.9",
         "eslint": "^7.2.0",
         "eslint-config-airbnb-base": "^14.2.0",
-        "eslint-plugin-import": "^2.21.2"
+        "eslint-plugin-import": "^2.21.2",
+        "strip-ansi": "^3.0.1"
     },
     "browserslist": [
         "last 10 Chrome versions",

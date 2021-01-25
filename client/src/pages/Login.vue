@@ -26,7 +26,7 @@
                             lazy-rules
                             v-model="formData.email"
                             class="col"
-                            label="Email"
+                            label="Group"
                             stack-label
                         />
                     </div>

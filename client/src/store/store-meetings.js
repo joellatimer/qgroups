@@ -11,13 +11,21 @@ const state = {
 const mutations = {
     addMeeting(state, payload) {
         Vue.set(state.meetings, payload.id, payload.myMeeting)
+    },
+    updateMeeting(state, payload) {
+        Object.assign(state.meetings[payload.id], payload.updates)
     }
 }
 const actions = {
+    updateMeeting({ commit }, payload) {
+        // commit('updateMeeting', payload)
+        console.log('payload:', payload.id)
+        console.log('payload:', payload.updates)
+    },
+
     fbReadData({ commit }) {
         console.log('start reading from Firebase Meetings')
         const userId = firebaseAuth.currentUser.uid
-
         const myRef = firebaseDb.ref(`meetings/${userId}`)
         myRef.on('child_added', (snapshot) => {
             const myMeeting = snapshot.val()
@@ -26,13 +34,14 @@ const actions = {
                 id: snapshot.key,
                 myMeeting
             }
-
+            console.log(payload)
             commit('addMeeting', payload)
         })
     }
 }
+
 const getters = {
-    meetings: (state) => state.meetings
+    meetings: (state) => state.meetings,
 }
 
 export default {
