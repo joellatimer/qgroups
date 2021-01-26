@@ -1,11 +1,11 @@
 {
     "groups" : {
       "kiYyiUrPpJZC9Shw3gSsJHtEynq1" : {
-        "groupName" : "Springdale Woods"
-      },
-      "yPPnTAwkNhNRQdBvrYv326QXL3F2" : {
-        "groupName" : "East Macon"
-      }
+            "groupName" : "Springdale Woods"
+            },
+        "yPPnTAwkNhNRQdBvrYv326QXL3F2" : {
+            "groupName" : "East Macon"
+            }
     },
     "meetings" : {
         "kiYyiUrPpJZC9Shw3gSsJHtEynq1" : {
@@ -13,76 +13,67 @@
                 "att%" : 90,
                 "date" : "2020/5/23",
                 "type" : "regular",   
-                "attends":{
-                    "510cf17d-81e1-451c-901f-e8b9fa24f920": {
-                            "present" : true,
-                            "firstName" : "Tim",
-                            "lastName" : "Bottoms"
-                        }
-                }
-                
+                "510cf17d-81e1-451c-901f-e8b9fa24f920": {
+                        "present" : true,
+                        "firstName" : "Tim",
+                        "lastName" : "Bottoms"
+                    }
             },
             "id2": {
                 "att%" : 85,
                 "date" : "2020/3/2",
                 "type" : "missional",
-                "attends":{
-                    "510cf17d-81e1-451c-901f-e8b9fa24f920": {
-                        "present" : false,
-                        "firstName" : "Tim",
-                        "lastName" : "Bottoms"
-                    }
-                    
+                "510cf17d-81e1-451c-901f-e8b9fa24f920": {
+                    "present" : false,
+                    "firstName" : "Tim",
+                    "lastName" : "Bottoms"
                 }
-               
+                    
             }
-      },
-      "yPPnTAwkNhNRQdBvrYv326QXL3F2" : {
+               
+        },
+        "yPPnTAwkNhNRQdBvrYv326QXL3F2" : {
             "id1":{
                 "att%" : "81%",
                 "date" : "3/20/2019",
                 "type" : "regular",
-                "attends":{
-                    "00291ab0-63f4-43cd-9cac-08f18b6e6ba2":{
-                        "present": true,
-                        "firstName":"Jim",
-                        "lastName": "Shaw"
-                    },
-                    "510cf17d-81e1-451c-901f-e8b9fa24f920":{
-                        "present": true,
-                        "firstName":"Donald",
-                        "lastName": "Duck"
-                    },
-                    "7928b72e-b096-4be5-a3ef-e00a6112bb9f":{
-                        "present": true,
-                        "firstName":"Joe",
-                        "lastName": "Biden"
-                    }    
-                }
-                
+                "00291ab0-63f4-43cd-9cac-08f18b6e6ba2":{
+                    "present": true,
+                    "firstName":"Jim",
+                    "lastName": "Shaw"
+                },
+                "510cf17d-81e1-451c-901f-e8b9fa24f920":{
+                    "present": true,
+                    "firstName":"Donald",
+                    "lastName": "Duck"
+                },
+                "7928b72e-b096-4be5-a3ef-e00a6112bb9f":{
+                    "present": true,
+                    "firstName":"Joe",
+                    "lastName": "Biden"
+                }    
             },
             "id2":{
                 "att%" : "90%",
                 "date" : "4/20/2019",
                 "type" : "missional",
-                "attends":{
-                    "00291ab0-63f4-43cd-9cac-08f18b6e6ba2":{
-                        "present": true,
-                        "firstName":"Jim",
-                        "lastName": "Shaw"
-                    },
-                    "510cf17d-81e1-451c-901f-e8b9fa24f920":{
-                        "present": true,
-                        "firstName":"Donald",
-                        "lastName": "Duck"
-                    },
-                    "7928b72e-b096-4be5-a3ef-e00a6112bb9f":{
-                        "present": false,
-                        "firstName":"Joe",
-                        "lastName": "Biden"
-                    }    
-                }
+                "00291ab0-63f4-43cd-9cac-08f18b6e6ba2":{
+                    "present": true,
+                    "firstName":"Jim",
+                    "lastName": "Shaw"
+                },
+                "510cf17d-81e1-451c-901f-e8b9fa24f920":{
+                    "present": true,
+                    "firstName":"Donald",
+                    "lastName": "Duck"
+                },
+                "7928b72e-b096-4be5-a3ef-e00a6112bb9f":{
+                    "present": false,
+                    "firstName":"Joe",
+                    "lastName": "Biden"
+                }    
             }
+            
         }
     },
     "members" : {
@@ -94,7 +85,7 @@
                 "lastName" : "Bottoms",
                 "phone" : "(478) 898 1564"
             }
-    },
+        },
         "yPPnTAwkNhNRQdBvrYv326QXL3F2" : {
             "00291ab0-63f4-43cd-9cac-08f18b6e6ba2" : {
                 "email" : "jim@gmail.com",
@@ -102,21 +93,21 @@
                 "joinDate" : "",
                 "lastName" : "Shaw",
                 "phone" : "(478) 568 1546"
-                },
+            },
             "1d567b58-c623-492a-8a9e-b2fc6573fada" : {
                 "email" : "don@gmail.com",
                 "firstName" : "Donald",
                 "joinDate" : "",
                 "lastName" : "Duck",
                 "phone" : "(589) 648 2351"
-                },
+            },
             "7928b72e-b096-4be5-a3ef-e00a6112bb9f" : {
                 "email" : "joe@test.com",
                 "firstName" : "Joe",
                 "joinDate" : "",
                 "lastName" : "Biden",
                 "phone" : "(587) 956 5285"
-                }
-      }
+            }
+        }
     }
-  }
+}

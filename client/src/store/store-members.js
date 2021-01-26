@@ -32,17 +32,19 @@ const actions = {
     },
     addMember({ dispatch }, member) {
         const memberId = uid()
+
         const payload = {
             id: memberId,
             member
         }
-        dispatch('fbaddMember', payload)
+        dispatch('fbAddMember', payload)
     },
     fbReadData({ commit }) {
         console.log('start reading from Firebase Members')
         const userId = firebaseAuth.currentUser.uid
         console.log(userId)
         const myRef = firebaseDb.ref(`members/${userId}`)
+        // child_added hook fires on open and subsequent reads
         myRef.on('child_added', (snapshot) => {
             const myMember = snapshot.val()
             const payload = {
@@ -66,9 +68,10 @@ const actions = {
         })
     },
     fbAddMember({ }, payload) {
-        console.log(payload.member)
+        console.log('member:', payload.member)
         const userId = firebaseAuth.currentUser.uid
         const myRef = firebaseDb.ref(`members/${userId}/${payload.id}`)
+        console.log('myRef:', myRef)
         myRef.set(payload.member)
     },
     fbUpdateMember({ }, payload) {

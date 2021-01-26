@@ -51,10 +51,10 @@ export default {
                     label: "Meetings",
                     to: "/meetings",
                 },
-                // {
-                //    label: 'Attencance',
-                //    to: '/attendance'
-                // }
+                {
+                   label: 'Admin',
+                   to: '/admin'
+                }
             ],
         };
     },

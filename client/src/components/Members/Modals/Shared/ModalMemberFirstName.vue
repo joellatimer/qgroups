@@ -7,6 +7,7 @@
                 :value="firstName"
                 :rules="[(val) => !!val || 'Field is required']"
                 ref="firstName"
+                autofocus
                 label="First Name"
                 class="col"
             >

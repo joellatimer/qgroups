@@ -23,8 +23,8 @@ const routes = [
                 component: () => import('pages/Meetings.vue')
             },
             {
-                path: '/attendance',
-                component: () => import('pages/Attendance.vue')
+                path: '/admin',
+                component: () => import('pages/Admin.vue')
             }
         ]
     },

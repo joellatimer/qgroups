@@ -8,14 +8,12 @@
                     :firstName.sync="memberToSubmit.firstName"
                     ref="modalMemberFirstName"
                 />
-
                 <modal-member-last-name
-                    :lastName.sync="memberToSubmit.lastName"
-                />
-
-                <modal-member-email :email.sync="memberToSubmit.email" />
-
-                <modal-member-phone :phone.sync="memberToSubmit.phone" />
+                    :lastName.sync="memberToSubmit.lastName"/>
+                <modal-member-email 
+                    :email.sync="memberToSubmit.email" />
+                <modal-member-phone 
+                    :phone.sync="memberToSubmit.phone" />
             </q-card-section>
 
             <modal-button></modal-button>
